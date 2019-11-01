@@ -7,7 +7,9 @@ body {
   background-attachment: fixed;
   min-height: 100% !important;
   color: @blog-font-color !important;
-  font-family: "Lato", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
+    sans-serif !important;
+
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -57,6 +59,12 @@ a {
 
 #home {
   width: 100%;
+}
+
+#cnblogs_post_body {
+  p {
+    margin: 15px !important;
+  }
 }
 
 /* 页头 */
@@ -613,8 +621,7 @@ a {
   padding-right: 1em;
   border: none !important;
   border-radius: 3px !important;
-  font-family: Lucida Console, Consolas, Monaco, Andale Mono, Ubuntu Mono,
-    monospace !important;
+  font-family: Lucida Console, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace !important;
 
   div {
     background-color: transparent;
@@ -816,8 +823,7 @@ a {
     outline: none;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: color 0.2s linear, background-color 0.2s linear,
-      border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
     margin-top: 5px;
     border-color: @blog-border-color;
     background-color: @blog-bg-color;
@@ -1082,8 +1088,7 @@ a {
     user-select: none;
     padding: 0px 10px;
     border-radius: 5px;
-    transition: color 0.2s linear, background-color 0.2s linear,
-      border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
   }
 
   .diggit {
@@ -1306,8 +1311,7 @@ a {
     padding: 5px 20px;
     font-size: 12px;
     border-radius: 5px;
-    transition: color 0.2s linear, background-color 0.2s linear,
-      border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
 
     &:hover {
       opacity: 0.7;
@@ -1441,6 +1445,10 @@ a {
     img {
       width: 100%;
       max-width: none !important;
+    }
+
+    p {
+      margin: 15px !important;
     }
   }
 
@@ -1603,9 +1611,7 @@ a {
     height: 70px;
     line-height: 70px;
     color: #fff;
-    background: #ffd886
-      url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_like.png)
-      no-repeat center 10px;
+    background: #ffd886 url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_like.png) no-repeat center 10px;
     background-size: 20px;
     border-radius: 35px;
     text-align: center;
@@ -1619,8 +1625,7 @@ a {
     top: calc(50% - 30px);
     width: 24px;
     height: 24px;
-    background: no-repeat center center
-      url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_github.png);
+    background: no-repeat center center url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_github.png);
     background-size: contain;
     opacity: 0.3;
     transform: rotatez(15deg);
