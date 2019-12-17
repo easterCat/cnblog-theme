@@ -7,8 +7,8 @@ body {
   background-attachment: fixed;
   min-height: 100% !important;
   color: @blog-font-color !important;
-  font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
-    sans-serif !important;
+  font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, WenQuanYi Micro Hei, sans-serif !important;
 
   background-color: rgba(0, 0, 0, 0);
 }
@@ -526,6 +526,8 @@ a {
     }
 
     img {
+      box-shadow: 0 1px 4px rgba(100, 149, 255, 0.3),
+        0 0 20px rgba(100, 149, 255, 0.1) inset;
       max-width: 930px !important;
       display: inline-block;
       margin: 15px auto 30px auto;
@@ -621,7 +623,8 @@ a {
   padding-right: 1em;
   border: none !important;
   border-radius: 3px !important;
-  font-family: Lucida Console, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace !important;
+  font-family: Lucida Console, Consolas, Monaco, Andale Mono, Ubuntu Mono,
+    monospace !important;
 
   div {
     background-color: transparent;
@@ -823,7 +826,8 @@ a {
     outline: none;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear,
+      border 0.2s linear, box-shadow 0.2s linear;
     margin-top: 5px;
     border-color: @blog-border-color;
     background-color: @blog-bg-color;
@@ -911,7 +915,8 @@ a {
 
 .esa-catalog {
   position: fixed;
-  top: 120px;
+  top: 80px;
+  bottom: 200px;
   right: 1px;
   width: auto;
   height: auto;
@@ -944,11 +949,12 @@ a {
 }
 
 .esa-catalog-contents {
+  height: 100%;
   overflow: hidden;
   display: none;
   color: @blog-font-color;
   border: 1px solid @blog-border-color;
-  min-width: 150px;
+  min-width: 200px;
   opacity: 1;
   font-size: inherit;
   background-color: rgba(255, 255, 255, 0.94);
@@ -956,7 +962,6 @@ a {
 
   ul {
     padding: 10px 15px;
-    max-height: 350px;
     overflow-y: auto;
 
     li {
@@ -1088,7 +1093,8 @@ a {
     user-select: none;
     padding: 0px 10px;
     border-radius: 5px;
-    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear,
+      border 0.2s linear, box-shadow 0.2s linear;
   }
 
   .diggit {
@@ -1311,7 +1317,8 @@ a {
     padding: 5px 20px;
     font-size: 12px;
     border-radius: 5px;
-    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear,
+      border 0.2s linear, box-shadow 0.2s linear;
 
     &:hover {
       opacity: 0.7;
@@ -1611,7 +1618,9 @@ a {
     height: 70px;
     line-height: 70px;
     color: #fff;
-    background: #ffd886 url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_like.png) no-repeat center 10px;
+    background: #ffd886
+      url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_like.png)
+      no-repeat center 10px;
     background-size: 20px;
     border-radius: 35px;
     text-align: center;
@@ -1625,7 +1634,8 @@ a {
     top: calc(50% - 30px);
     width: 24px;
     height: 24px;
-    background: no-repeat center center url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_github.png);
+    background: no-repeat center center
+      url(http://images.cnblogs.com/cnblogs_com/esofar/1504962/o_github.png);
     background-size: contain;
     opacity: 0.3;
     transform: rotatez(15deg);
@@ -1810,4 +1820,13 @@ a {
       transform: rotateZ(40deg) scale(0.6, 0.6);
     }
   }
+}
+
+.lb-outerContainer {
+  width: 100% !important;
+  height: 100% !important;
+}
+.lb-outerContainer img {
+  width: 100% !important;
+  height: 100% !important;
 }
